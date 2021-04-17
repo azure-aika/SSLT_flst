@@ -34,7 +34,7 @@ body {
     width: 100%;
     overflow-x: hidden;
     box-sizing: content-box;
-    -webkit-text-size-adjust: 100%;
+  /*  -webkit-text-size-adjust: 100%;*/
 }
 img {
     display: block;
@@ -45,6 +45,7 @@ a, a:active, a:visited, a:hover {
 }
 
 h1{
+	margin-top: 50px;
 	text-align: center;
 }
 /*---------------------------------------------ARmodel---------------------------------------------*/
