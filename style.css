@@ -45,6 +45,7 @@ a, a:active, a:visited, a:hover {
 }
 button {
     /*リセット*/
+	-webkit-appearance:none;
     appearance: none;
     outline: none;
     border: none;
