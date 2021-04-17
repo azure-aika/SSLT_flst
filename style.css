@@ -45,6 +45,8 @@ a, a:active, a:visited, a:hover {
 }
 
 h1{
+	width: 650px;
+	margin: 50px auto 0;
 	text-align: center;
 }
 /*---------------------------------------------ARmodel---------------------------------------------*/
@@ -57,7 +59,7 @@ h1{
 model-viewer {
     position: absolute;
     left: 50px;
-    width: 600px;
+    width:600px;
     height: 500px;
     margin: auto;
     background-color: #C8DFD7;
@@ -75,19 +77,25 @@ model-viewer {
     z-index: 4;
 }
 .another-ar-button {
+	display: inline-block;
+	text-align: center;
+	width: 300px;
+    height: 150px;
+	margin: 50px auto;
 }
 /*---------------------------------------------caption---------------------------------------------*/
 .caption {
     width: 650px;
-	height: 200px;
+	height: auto;
     margin: 0 auto;
+	background: red;
 }
 /*---------------------------------------------userguide---------------------------------------------*/
 h2 {
 	margin-bottom: 50px;
 }
 .user_guide, .compatible_box {
-    width: 650px;
+    width: 500px;
     height: auto;
     margin: 0 auto;
     padding: 50px;
@@ -112,12 +120,14 @@ h2 {
 	border-radius: 50%;
 }
 .user_guide li p{
-	width: 350px;
+	width: 200px;
 	margin: auto 0;
 	text-align: left;
 }
 /*---------------------------------------------compatible---------------------------------------------*/
-
+.compatible_box {
+	margin: 50px auto;
+}
 /*---------------------------------------------footer---------------------------------------------*/
 footer {
     background: #C8DFD7;
