@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>sampe</title>
+<script
+            type="module"
+            src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js">
+    </script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>斉藤壮馬  LiveTour 2021<br>"We are in Bloom!"</h1>
+<div class="model_box">
+  <model-viewer 
+                  src="https://azure-aika.github.io/SSLT_flst/model/WebAR_sample.glb"
+                  ios-src="https://azure-aika.github.io/SSLT_flst/model/WebAR_sample.usdz"
+                  shadow-intensity="1"
+                  interaction-prompt="auto"
+                  auto-rotate ar magic-leap
+                  camera-controls
+                  > </model-viewer>
+  <div></div>
+</div>
+<div class="caption">
+  <p>当サイト内の画像・文章等を無断で転載・複製・加工・使用等することは一切禁止とさせていただきます。</p>
+  <p>二次創作のイラストにつきましては版権元とは一切関係ありません。</p>
+</div>
+<button class="another-ar-button">フラスタを飾る</button>
+<div class="user_guide">
+  <h2>使い方</h2>
+  <li> <img src="img/">
+    <p>立方体のアイコンもしくは「フラスタを飾る」ボタンを押して、ARを起動</p>
+  </li>
+  <li><img src="img/">
+    <p>平面を読み込むと出現</p>
+  </li>
+  <li><img src="img/">
+    <p>スワイプで移動、ピンチイン(アウト)で拡大</p>
+  </li>
+  <li><img src="img/">
+    <p>二本指で回転させると、その方向に回転</p>
+  </li>
+  <li><img src="img/">
+    <p>ボタンをタップで写真撮影、長押しで動画撮影</p>
+  </li>
+</div>
+<div class="compatible_box">
+  <h2>対応機種</h2>
+  <li>使い方1</li>
+  <li>使い方2</li>
+  <li>使い方3</li>
+  <li>使い方4</li>
+</div>
+<footer>
+  <div>
+    <p>当サイト内の画像・文章等を無断で転載・複製・加工・使用等することは一切禁止とさせていただきます。</p>
+    <p>二次創作のイラストにつきましては版権元とは一切関係ありません。</p>
+  </div>
+</footer>
+<script>
+<!-- AR起動ボタン -->
+    document.querySelector('.another-ar-button').addEventListener('click', (event) => {
+      const modelViewer = document.querySelector("model-viewer");
+      modelViewer.activateAR();
+    });
+  </script>
+</body>
+</html>
