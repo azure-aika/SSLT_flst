@@ -34,7 +34,7 @@ body {
     width: 100%;
     overflow-x: hidden;
     box-sizing: content-box;
-  /*  -webkit-text-size-adjust: 100%;*/
+   -webkit-text-size-adjust: 100%;
 }
 img {
     display: block;
@@ -51,14 +51,14 @@ h1{
 /*---------------------------------------------ARmodel---------------------------------------------*/
 .model_box {
     position: relative;
-    width: 750px;
+    width: 650px;
     height: 550px;
     margin: 50px auto;
 }
 model-viewer {
     position: absolute;
     left: 50px;
-    width: 700px;
+    width: 600px;
     height: 500px;
     margin: auto;
     background-color: #C8DFD7;
@@ -68,7 +68,7 @@ model-viewer {
 .model_box div {
     position: absolute;
     top: 50px;
-    width: 700px;
+    width: 600px;
     height: 500px;
     /*  background-color: #C8DFD7;*/
     background: url(img/bg.png) center no-repeat;
@@ -91,7 +91,7 @@ h2 {
 	margin-bottom: 50px;
 }
 .user_guide, .compatible_box {
-    width: 750px;
+    width: 650px;
     height: auto;
     margin: 0 auto;
     padding: 50px 100px;
