@@ -99,6 +99,7 @@ h2 {
     margin-bottom: 30px;
     height: 150px;
 }
+
 .user_guide li:last-child {
     margin-bottom: 0px;
 }
@@ -109,7 +110,10 @@ h2 {
     background: #fff;
 	border-radius: 50%;
 }
-.user_guide li p {}
+.user_guide li p{
+	width: 400px;
+	text-align: left;
+}
 /*---------------------------------------------compatible---------------------------------------------*/
 .compatible_box {
     margin: 50px auto;
