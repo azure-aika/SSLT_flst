@@ -25,7 +25,7 @@ html {
 }
 body {
     color: #333333;
-    font-size: 14px;
+    font-size: 20px;
     font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", "sans-serif";
     text-align: center;
     position: relative;
@@ -112,6 +112,7 @@ h2 {
 }
 .user_guide li p{
 	width: 350px;
+	height: 150px;
 	text-align: left;
 }
 /*---------------------------------------------compatible---------------------------------------------*/
