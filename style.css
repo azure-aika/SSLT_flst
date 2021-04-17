@@ -25,7 +25,7 @@ html {
 }
 body {
     color: #333333;
-    font-size: 24px;
+    font-size: 16px;
     font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", "sans-serif";
     text-align: center;
     position: relative;
@@ -34,7 +34,7 @@ body {
     width: 100%;
     overflow-x: hidden;
     box-sizing: content-box;
-   -webkit-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
 }
 img {
     display: block;
@@ -43,23 +43,27 @@ a, a:active, a:visited, a:hover {
     color: inherit;
     text-decoration: none;
 }
-
-h1{
-	width: 650px;
-	margin: 50px auto 0;
-	text-align: center;
+.wrapper {
+    position: relative;
+    width: 650px;
+    margin: 0 auto;
+}
+h1 {
+    width: 100%;
+    margin: 50px auto 0;
+    text-align: center;
 }
 /*---------------------------------------------ARmodel---------------------------------------------*/
 .model_box {
     position: relative;
-    width: 650px;
+    width: 100%;
     height: 550px;
     margin: 50px auto;
 }
 model-viewer {
     position: absolute;
     left: 50px;
-    width:600px;
+    width: 600px;
     height: 500px;
     margin: auto;
     background-color: #C8DFD7;
@@ -77,25 +81,25 @@ model-viewer {
     z-index: 4;
 }
 .another-ar-button {
-	display: inline-block;
-	text-align: center;
-	width: 300px;
+    display: inline-block;
+    text-align: center;
+    width: 300px;
     height: 150px;
-	margin: 50px auto;
+    margin: 50px auto;
 }
 /*---------------------------------------------caption---------------------------------------------*/
 .caption {
-    width: 650px;
-	height: auto;
+    position: relative;
+    width: 100%;
+    height: auto;
     margin: 0 auto;
-	background: red;
 }
 /*---------------------------------------------userguide---------------------------------------------*/
 h2 {
-	margin-bottom: 50px;
+    margin-bottom: 50px;
 }
 .user_guide, .compatible_box {
-    width: 500px;
+    width: 100%;
     height: auto;
     margin: 0 auto;
     padding: 50px;
@@ -104,29 +108,29 @@ h2 {
 }
 .user_guide li {
     display: flex;
+	flex-flow: row;
     list-style: none;
     margin-bottom: 30px;
     height: 150px;
 }
-
 .user_guide li:last-child {
     margin-bottom: 0px;
 }
 .user_guide li img {
     width: 150px;
     height: 150px;
-    margin-right: 50px;
+    margin: auto 30px auto 0px;
     background: #fff;
-	border-radius: 50%;
+    border-radius: 50%;
 }
-.user_guide li p{
-	width: 200px;
-	margin: auto 0;
-	text-align: left;
+.user_guide li p {
+    width: 370px;
+    margin: auto 0;
+    text-align: left;
 }
 /*---------------------------------------------compatible---------------------------------------------*/
 .compatible_box {
-	margin: 50px auto;
+    margin: 50px auto;
 }
 /*---------------------------------------------footer---------------------------------------------*/
 footer {
@@ -144,4 +148,41 @@ footer > div {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+/*---------------------------------------------@media---------------------------------------------*/
+@media screen and (max-width : 650px) {
+    .wrapper {
+        width: 320px;
+        margin: 0 auto;
+    }
+    .model_box {
+        width: 100%;
+        height: 290px;
+    }
+    model-viewer {
+        left: 20px;
+        width: 300px;
+        height: 250px;
+    }
+    .model_box div {
+        top: 20px;
+        width: 300px;
+        height: 250px;
+    }
+    .user_guide li {
+		height: auto;
+		flex-flow: column;
+    }
+    .user_guide li:last-child {
+        margin-bottom: 0px;
+    }
+    .user_guide li img {
+        width: 150px;
+        height: 150px;
+        margin: 0px auto 10px;
+    }
+    .user_guide li p {
+        width: 220px;
+		text-align: center;
+    }
 }
