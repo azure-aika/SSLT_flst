@@ -18,10 +18,10 @@ body {
     font-size: 16px;
     font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", "sans-serif";
     text-align: center;
-	 box-sizing: content-box;
-	-webkit-text-size-adjust: 100%;
-	margin: auto;
-	height: 100vh;
+    box-sizing: content-box;
+    -webkit-text-size-adjust: 100%;
+    margin: auto;
+    height: 100vh;
 }
 img {
     display: block;
@@ -50,7 +50,7 @@ button {
 }
 .caption h1 {
     font: 14px normal;
-	line-height: 0.8em;
+    line-height: 0.8em;
 }
 .caption h1 span {
     font: 24px normal;
@@ -59,15 +59,14 @@ button {
     margin: 0.5em 0;
     font: 18px;
 }
-
 .model_box {
     position: relative;
     width: 100%;
-	height: 100%;
+    height: 100%;
 }
 model-viewer {
     position: absolute;
-	top: 0;
+    top: 0;
     right: 0;
     width: 90%;
     height: 90%;
@@ -78,23 +77,28 @@ model-viewer {
 .model_box div {
     position: absolute;
     bottom: 0;
-	left: 0;
+    left: 0;
     width: 90%;
     height: 90%;
     /*  background-color: #C8DFD7;*/
     background: url(img/bg.png) center no-repeat;
     background-size: cover;
     z-index: 2;
-}
+}/*
 .attention {
-	display: flex;
+    display: flex;
     position: absolute;
     transform-origin: center center;
     left: 0px;
     bottom: 0px;
     z-index: 5;
-}
+}*/
 .another-ar-button {
+    position: absolute;
+    transform-origin: center center;
+    left: 0px;
+    bottom: 0px;
+    z-index: 5;
     display: block;
     width: 200px;
     height: 200px;
@@ -103,7 +107,8 @@ model-viewer {
     background-image: url("img/flst.png");
     background-size: 100% 100%;
 }
-.attention p {
-	font: 10px normal;;
-	margin: auto;
+.another-ar-button p {
+    font: 10px normal;
+    ;
+    margin: auto;
 }
