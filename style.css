@@ -62,12 +62,13 @@ button {
 }
 .caption h1 {
     font: 14px normal;
+	line-height: 0.8em;
 }
 .caption h1 span {
     font: 24px normal;
 }
 .caption p {
-    margin: 1em 0;
+    margin: 0.5em 0;
     font: 18px;
 }
 .model_box {
@@ -77,10 +78,10 @@ button {
 }
 model-viewer {
     position: absolute;
+	top: 0;
     left: 10%;
     width: 90%;
     height: 90%;
-    margin: auto;
     background-color: #C8DFD7;
     --poster-color: #C8DFD7;
     z-index: 3;
