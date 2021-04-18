@@ -117,3 +117,9 @@ model-viewer {
 	font: 12px normal;;
 	margin: auto;
 }
+
+@supports (-webkit-touch-callout: none){
+	body{
+		height: -webkit-fill-available;
+	}
+}
