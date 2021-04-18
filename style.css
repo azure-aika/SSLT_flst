@@ -73,7 +73,7 @@ button {
 .model_box {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 100%;
 }
 model-viewer {
     position: absolute;
