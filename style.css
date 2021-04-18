@@ -25,6 +25,7 @@ body {
 	overflow: hidden;
 }
 .wrapper {
+	position: relative;
 	height: 100vh;
 }
 
@@ -117,4 +118,10 @@ model-viewer {
     font: 10px normal;
     ;
     margin: auto;
+}
+
+@supports (-webkit-touch-callout:none){
+	body{
+		height: -webkit-fill-available;
+	}
 }
