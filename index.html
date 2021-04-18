@@ -44,6 +44,12 @@
 		var boxHeight = window.innerHeight;
 		document.getElementsByClassName('wrapper').style.height = boxHeight;
 	})
+	
+	document.addEventListener('DOMContentLoaded',function(){
+		var innerHeight = window.innerHeight
+		document.documentElement.style.setProperty('--inner-height',outerHeight+'px')
+	})	
+
   </script>
 </body>
 </html>
