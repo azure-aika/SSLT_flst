@@ -11,10 +11,7 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<script>
-		<!-- innerHeight -->	
-		var innerHeight = window.innerHeight;
-	document.getElementsByClassName('model_box')= innerHeight + 'px';
+<script>
   </script>
 <div class="caption">
   <h1>斉藤壮馬  LiveTour 2021<br>
@@ -43,7 +40,18 @@
     document.querySelector('.another-ar-button').addEventListener('click', (event) => {
       const modelViewer = document.querySelector("model-viewer");
       modelViewer.activateAR();
-    });
+	    });
+	
+			<!-- innerHeight -->	
+				var currentWidth = window.innerWidth;
+	window.addEventListener("resize", function(){
+		if(currentWidth == window.innerWidth){
+			return;
+		}
+	});
+		var innerHeight = window.innerHeight;
+	document.body.style.height = innerHeight + 'px';
+
   </script>
 </body>
 </html>
