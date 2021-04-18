@@ -29,7 +29,8 @@
 </div>
 <div class="attention">
   <button class="another-ar-button">フラスタを飾る</button>
-  <p>※ARが起動します<br>(スマホのみ)</p>
+  <p>※ARが起動します<br>
+    (スマホのみ)</p>
 </div>
 <script>
 <!-- AR起動ボタン -->
@@ -37,6 +38,9 @@
       const modelViewer = document.querySelector("model-viewer");
       modelViewer.activateAR();
     });
+	<!-- innerheight -->
+		var vh=window.innerHeight;
+	document.body.style.height=vh+'px';
   </script>
 </body>
 </html>
