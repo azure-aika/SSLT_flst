@@ -11,13 +11,13 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="caption">
-  <h1>斉藤壮馬  LiveTour 2021<br>
-    <span>"We are in Bloom!"</span></h1>
-  <p>開催記念　ARフラスタ</p>
-</div>
-<div class="model_box">
-  <model-viewer 
+  <div class="caption">
+    <h1>斉藤壮馬  LiveTour 2021<br>
+      <span>"We are in Bloom!"</span></h1>
+    <p>開催記念　ARフラスタ</p>
+  </div>
+  <div class="model_box">
+    <model-viewer 
                   src="https://azure-aika.github.io/SSLT_flst/model/WebAR_sample.glb"
                   ios-src="https://azure-aika.github.io/SSLT_flst/model/WebAR_sample.usdz"
                   shadow-intensity="1"
@@ -25,12 +25,12 @@
                   auto-rotate ar magic-leap
                   camera-controls
                   > </model-viewer>
-  <div></div>
-</div>
-<button class="another-ar-button">フラスタを飾る
-<p>※ARが起動します<br>
-  (スマホのみ)</p>
-</button>
+    <div></div>
+  </div>
+  <button class="another-ar-button">フラスタを飾る
+  <p>※ARが起動します<br>
+    (スマホのみ)</p>
+  </button>
 <script>
 <!-- AR起動ボタン -->
     document.querySelector('.another-ar-button').addEventListener('click', (event) => {
@@ -38,16 +38,10 @@
       modelViewer.activateAR();
 	    });
 	
-			<!-- innerHeight -->	
-				document.body.style.height = window.innerHeight;
-				var currentHeight = window.innerHeight;
-	window.addEventListener("resize", function(){
-		if(currentHeight <= window.innerHeight){
-			document.body.style.height = currentHeight;
-		}else{
-			document.body.style.height = window.innerHeight;
-		}
-	});
+	window.addEventListener('DOMContentLoaded',function(){
+		var boxHeight = window.innerHeight;
+		document.body.style.height = boxHeight;
+	})
   </script>
 </body>
 </html>
