@@ -13,29 +13,14 @@
     padding: 0;
     box-sizing: border-box;
 }
-html {
-	background-color: blue;
-   /* min-height: 100vh;
-    
-  background: url(img/bg.png) center no-repeat;
-  background-size: cover;
-  background-color: rgba(255,255,255,0.4);
-  background-blend-mode: lighten;
-*/
-}
 body {
     color: #333333;
     font-size: 16px;
     font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", "sans-serif";
     text-align: center;
-  /*  position: relative;*/
-	margin: 0;
-	padding: 0;
+	position: relative;
 	 box-sizing: content-box;
-	height: 100vh;
-    width: 100vw;
-    -webkit-text-size-adjust: 100%;
-	background-color: red;
+	-webkit-text-size-adjust: 100%;
 }
 img {
     display: block;
@@ -76,7 +61,7 @@ button {
 .model_box {
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 100vh;
 }
 model-viewer {
     position: absolute;
@@ -111,12 +96,12 @@ model-viewer {
     display: block;
     width: 200px;
     height: 200px;
-    font: bold;
+    font: 16px bold;
     color: #fff;
     background-image: url("img/flst.png");
     background-size: 100% 100%;
 }
 .attention p {
-	font: 12px normal;;
+	font: 10px normal;;
 	margin: auto;
 }
