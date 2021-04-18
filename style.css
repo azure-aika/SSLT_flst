@@ -119,9 +119,3 @@ model-viewer {
     ;
     margin: auto;
 }
-
-@supports (-webkit-touch-callout:none){
-	body{
-		height: -webkit-fill-available;
-	}
-}
