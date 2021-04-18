@@ -29,9 +29,8 @@ body {
     font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", "sans-serif";
     text-align: center;
     position: relative;
-    min-height: calc(100vh - 120px);
-    padding-bottom: 120px;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     overflow-x: hidden;
     box-sizing: content-box;
     -webkit-text-size-adjust: 100%;
@@ -45,159 +44,70 @@ a, a:active, a:visited, a:hover {
 }
 button {
     /*リセット*/
-	-webkit-appearance:none;
+    -webkit-appearance: none;
     appearance: none;
     outline: none;
     border: none;
     padding: 0;
     background-color: transparent;
 }
-.wrapper {
-    position: relative;
-    width: 650px;
-    margin: 0 auto;
+.caption {
+    width: 300px;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    z-index: 5;
+    text-align: left;
+    font: normal 16px;
 }
-h1 {
-    font-size: 24px;
-    white-space: nowrap;
-    width: 100%;
-    margin: 50px auto 0;
-    text-align: center;
+.caption h1{
+	font: 14px normal;
 }
+.caption h1 span{
+	font: 24px normal;
+}
+.caption p {
+	margin: 1em 0;
+	font: 18px;
+}
+
 /*---------------------------------------------ARmodel---------------------------------------------*/
 .model_box {
     position: relative;
     width: 100%;
-    height: 550px;
-    margin: 50px auto;
+    height: 100vh;
 }
 model-viewer {
     position: absolute;
-    left: 50px;
-    width: 600px;
-    height: 500px;
+    left: 10%;
+    width: 90%;
+    height: 90%;
     margin: auto;
     background-color: #C8DFD7;
     --poster-color: #C8DFD7;
-    z-index: 5;
+    z-index: 3;
 }
 .model_box div {
     position: absolute;
-    top: 50px;
-    width: 600px;
-    height: 500px;
+    top: 10%;
+    width: 90%;
+    height: 90%;
     /*  background-color: #C8DFD7;*/
     background: url(img/bg.png) center no-repeat;
     background-size: cover;
-    z-index: 4;
+    z-index: 2;
 }
 .another-ar-button {
+    position: absolute;
+    transform-origin: center center;
+    left: 0px;
+    bottom: 0px;
     display: block;
-    width: 300px;
-    height: 300px;
-    margin: 50px auto;
-    font-size: 18px;
+    width: 200px;
+    height: 200px;
     font: bold;
-	color: #fff;
-    background-image: url("img/flst.png");
-	background-position: top 50px;
-}
-/*---------------------------------------------caption---------------------------------------------*/
-.caption {
-    position: relative;
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
-}
-/*---------------------------------------------userguide---------------------------------------------*/
-h2 {
-    margin-bottom: 50px;
-}
-.user_guide, .compatible_box {
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
-    padding: 50px;
-    background: url(img/bg.png) center no-repeat;
-    background-size: cover;
-}
-.user_guide li {
-    display: flex;
-    flex-flow: row;
-    list-style: none;
-    margin-bottom: 30px;
-    height: 150px;
-}
-.user_guide li:last-child {
-    margin-bottom: 0px;
-}
-.user_guide li img {
-    width: 150px;
-    height: 150px;
-    margin: auto 30px auto 0px;
-    background: #fff;
-    border-radius: 50%;
-}
-.user_guide li p {
-    width: 370px;
-    margin: auto 0;
-    text-align: left;
-}
-/*---------------------------------------------compatible---------------------------------------------*/
-.compatible_box {
-    margin: 50px auto;
-}
-/*---------------------------------------------footer---------------------------------------------*/
-footer {
-    background: #C8DFD7;
     color: #fff;
-    font-size: 10px;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 150px;
-}
-footer > div {
-    width: 300px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-/*---------------------------------------------@media---------------------------------------------*/
-@media screen and (max-width : 650px) {
-    .wrapper {
-        width: 320px;
-        margin: 0 auto;
-    }
-    .model_box {
-        width: 100%;
-        height: 290px;
-    }
-    model-viewer {
-        left: 20px;
-        width: 300px;
-        height: 250px;
-    }
-    .model_box div {
-        top: 20px;
-        width: 300px;
-        height: 250px;
-    }
-    .user_guide li {
-        height: auto;
-        flex-flow: column;
-    }
-    .user_guide li:last-child {
-        margin-bottom: 0px;
-    }
-    .user_guide li img {
-        width: 150px;
-        height: 150px;
-        margin: 0px auto 10px;
-    }
-    .user_guide li p {
-        width: 220px;
-        text-align: center;
-    }
+    background-image: url("img/flst.png");
+    background-size: 100% 100%;
+    z-index: 5;
 }
