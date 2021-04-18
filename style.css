@@ -21,7 +21,6 @@ html {
   background-color: rgba(255,255,255,0.4);
   background-blend-mode: lighten;
 */
-    background-color: #fff;
 }
 body {
     color: #333333;
@@ -32,7 +31,7 @@ body {
     width: 100vw;
     box-sizing: content-box;
     -webkit-text-size-adjust: 100%;
-	position: fixed;
+	background-color: #fff;
 }
 img {
     display: block;
